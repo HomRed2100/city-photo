@@ -19,6 +19,7 @@ header{
 }
 .header__wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 
@@ -36,6 +37,7 @@ header{
     width: 100%;
     min-height: 80px;
     display: flex;
+
 }
 .header__list {
     width: 100%;
@@ -143,17 +145,24 @@ header{
     
 }
 .card__photo_bef {
+    max-width: 527px;
+    width: 100%;
+    height: auto;
     align-self: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     
 }
 .card__year_bef {
+    
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     text-align: center;
 }
 .card__photo-af {
+    max-width: 527px;
+    width: 100%;
+    height: auto;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     text-align: center;
@@ -177,6 +186,7 @@ header{
     margin: 20px auto;
     max-width: 1400px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -203,6 +213,8 @@ header{
 .search__photo {
     
     max-width: 700px;
+    width: 100%;
+    height: auto;
     border: 2px solid cadetblue;
     box-shadow: 2px 8px 15px rgba(68, 116, 117, 0.3);
     padding: 30px;
@@ -212,6 +224,7 @@ header{
     margin: 20px auto;
     max-width: 1100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -275,4 +288,54 @@ header{
 
 .footer p {
     margin: 0;
+}
+
+/* responsieve */
+
+@media screen and (max-width: 1400px) {
+    
+    main {
+        padding: 2vw;
+    }
+}
+@media screen and (max-width: 1360px) {
+    
+    .search {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .search__form {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    
+    .form__block {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 670px) {
+    .form__left {
+        margin-bottom: 20px;
+    }
+    .form__left-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__left-2 {
+        flex-direction: column;
+        align-items: center;    
+    }
+}
+@media screen and (max-width: 450px) {
+    
+    .card__general {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card__general h3 {
+        font-size: 22px;
+    }
 }
