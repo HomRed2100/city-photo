@@ -69,6 +69,68 @@ header{
 .active {
     background-color: rgb(68, 116, 117);
 }
+.popup-menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.popup-menu__button{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 75px;
+    background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-color: #F6F2F2;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.popup-menu__list{
+    background-color: rgb(68, 116, 117);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 89px;
+    z-index: 1;
+}
+.popup-menu__item{
+    display: flex;
+    min-height: 89px;
+}
+.popup-menu__link{
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    color: #E0E0E0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    padding-top: 8px;
+}
+.popup-menu__link:hover{
+    background-color: var(--accent-color);
+}
+.popup-menu__link_active{
+    background-color: var(--accent-color);
+}
+
+.hide{
+    display: none;
+}
 
 /* main */
 .main__heading {
@@ -313,6 +375,16 @@ header{
     .form__block {
         flex-direction: column;
         justify-content: center;
+    }
+}
+@media screen and (min-width: 900px){
+    .popup-menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+    .header__nav{
+        display: none;
     }
 }
 @media screen and (max-width: 670px) {
