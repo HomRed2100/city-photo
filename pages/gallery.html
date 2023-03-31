@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Было-Стало</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <p class="header__name">Было/Стало</p>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li><a class="header__link" href="../index.html">Главная</a></li>
+            <li><a class="header__link active" href="#">Галерея</a></li>
+            <li><a class="header__link" href="create.html">Мастерская</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <div class="search">
+            <form class="search__form" action="#">
+                <div class="search__city">
+                    <p class="search__text">Выберите город:</p>
+                    <select class="search__item" name="city">
+                        <option value="tambov">Тамбов</option>
+                        <option value="kotovsk">Котовск</option>
+                        <option value="uvarovo">Уварово</option>
+                        <option value="rasskazovo">Рассказово</option>
+                    </select>
+                </div>
+                <div class="search__year">
+                    <p class="search__text">Выберите период:</p>
+                    <select class="search__item" name="years">
+                        <option value="bef1900">до 1900</option>
+                        <option value="1900-1914">1900-1914</option>
+                        <option value="1915-1950">1915-1950</option>
+                        <option value="1950-1970">1950-1970</option>
+                        <option value="1970-1990">1970-1990</option>
+                        <option value="после 1990">после 1990</option>
+                    </select>
+                </div >
+                <button type="submit" class="btn">Найти</button>
+            </form>
+            <img class="search__photo" src="../img/tambov2.jpg" alt="случайное фото">
+        </div>
+        <hr class="line">
+        <form action="#" class="form">
+            <fieldset>
+                <legend>Форма для загрузки</legend>
+                <div class="form__block">
+                    <div class="form__left">
+                        <div class="form__left-1">
+                            <label>Город:</label>
+                            <input type="text">
+                        </div>
+                        <div class="form__left-1">
+                            <label>Период (год):</label>
+                            <input type="text">
+                        </div>
+                        <div class="form__left-1"> 
+                            <label>Место</label>
+                            <input type="text">
+                        </div>
+                        <input type="file">
+                    </div>
+                    <div class="form__right">
+                        <p>Дополнительная информация:</p>
+                        <textarea class="form__textarea" name="info"></textarea>
+                        <button type="submit" class="btn">Загрузить</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>Copyright</p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+  </body>
+</html>

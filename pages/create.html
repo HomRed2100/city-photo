@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Было-Стало</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <p class="header__name">Было/Стало</p>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li><a class="header__link" href="../index.html">Главная</a></li>
+            <li><a class="header__link" href="gallery.html">Галерея</a></li>
+            <li><a class="header__link active" href="#">Мастерская</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <form action="#" class="form">
+          <fieldset>
+              <legend>Мастерская</legend>
+                <div class="form__block">
+                  <div class="form__left">
+                    <div class="form__pair">
+                      <div class="form__left-2">
+                        <label>Фото было:</label>
+                        <input type="file">
+                      </div>
+                      <div class="form__left-2">
+                        <label>Период (год):</label>
+                        <input type="text">
+                      </div>
+                    </div>
+                    <div class="form__pair">
+                      <div class="form__left-2">
+                        <label>Фото стало:</label>
+                        <input type="file">
+                      </div>
+                      <div class="form__left-2">
+                        <label>Период (год):</label>
+                        <input type="text">
+                      </div>
+                    </div>
+                    <div class="form__left-2">
+                      <label>Место:</label>
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="form__right">
+                      <p>Дополнительная информация:</p>
+                      <textarea class="form__textarea" name="info"></textarea>
+                      <button type="submit" class="btn">Загрузить</button>
+                      <button type="submit" class="btn">Скачать</button>
+                  </div>
+                </div>
+          </fieldset>
+        </form>
+        <div class="card__create">
+          <div class="card__general card__general_create">
+            <img class="card__photo_bef" src="../img/before.jpg" alt="фото было">
+            <p class="card__year_bef">1912</p>
+            <img class="card__photo-af" src="../img/after.jpg" alt="фото стало">
+            <p class="card__year_af">2020</p>
+            <h3 class="card__heading">Интернациональная, 33</h3>
+            <p class="card__comm">Дворянский земельный и крестьянский поземельный банк/Главный корпус ТГУ им.Г.Р. Державина</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright</p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+  </body>
+</html>
